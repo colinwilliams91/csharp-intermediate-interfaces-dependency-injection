@@ -6,12 +6,14 @@ namespace csharp_intermediate_interfaces_dependency_injection
     {
         public void LogError(string message)
         {
-            throw new NotImplementedException();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
         }
 
         public void LogInfo(string message)
         {
-            throw new NotImplementedException();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(message);
         }
     }
 }
