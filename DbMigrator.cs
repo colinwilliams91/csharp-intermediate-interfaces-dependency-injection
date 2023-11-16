@@ -15,11 +15,13 @@ namespace csharp_intermediate_interfaces_dependency_injection
 
         public void Migrate()
         {
-            Console.WriteLine($"Migration started at {DateTime.Now}");
+            /* Instead of hardcoding what we want to happen, we can utilize different concrete Classes which implement our interface as we create them, */
+            /* this adds extensibility for different cases depending on which Class we want to process our data (pass that class to DbMigrator ctor) */
+            _logger.LogInfo($"Migration started at {DateTime.Now}");
 
             // Details of migrating the database
 
-            Console.WriteLine($"Migration finished at {DateTime.Now}");
+            _logger.LogInfo($"Migration finished at {DateTime.Now}");
         }
     }
 }
