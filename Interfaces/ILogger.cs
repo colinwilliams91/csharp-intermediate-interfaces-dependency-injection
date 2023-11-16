@@ -1,4 +1,4 @@
-﻿namespace csharp_intermediate_interfaces_dependency_injection
+﻿namespace csharp_intermediate_interfaces_dependency_injection.Interfaces
 {
     public interface ILogger
     {

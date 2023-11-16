@@ -1,4 +1,5 @@
 ﻿using System;
+using csharp_intermediate_interfaces_dependency_injection.Interfaces;
 
 namespace csharp_intermediate_interfaces_dependency_injection
 {
