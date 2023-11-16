@@ -9,6 +9,8 @@ namespace csharp_intermediate_interfaces_dependency_injection
     {
         static void Main(string[] args)
         {
+            var dbMigrator = new DbMigrator(new ConsoleLogger());
+            dbMigrator.Migrate();
         }
     }
 }
